@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Доставка и оплата</title>
+    <title>Регистрация</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../Assets/CSS/main.css">
 </head>
@@ -44,22 +44,32 @@
     </header>
 
     <main class="container mx-auto px-4 max-w-[1280px] flex flex-col gap-14 my-10">
-        <div class="w-full p-4 grid grid-cols-2 gap-6 bg-[#213357] text-white rounded-xl">
-            <div class="flex flex-col gap-4 p-4 rounded-xl border border-white border-dashed col-span-1">
-                <p class="text-3xl text-center font-Comfortaa">Доставка</p>
-                <p>Мы осуществляем доставку ювелирных изделий по всей России и за ее пределы. </p>
-                <p>По России: 3-5 рабочих дней, стоимость доставки - от 300 рублей.</p>
-                <p>Международная доставка: 7-14 рабочих дней, стоимость - от 500 рублей.</p>
-            </div>
-            <div class="flex flex-col gap-4 p-4 rounded-xl border border-white border-dashed col-span-1">
-                <p class="text-3xl text-center font-Comfortaa">Оплата</p>
-                <p>Онлайн-платежи: принимаются карты Visa, Mastercard, PayPal.</p>
-                <p>Банковский перевод: доступен при предварительном согласовании.</p>
-                <p>Оплата при получении: возможна наличными или картой.</p>
-            </div>
-            <div class="flex flex-col gap-4 p-4 rounded-xl border border-white border-dashed col-span-full">
-                <p>Мы гарантируем возможность возврата товара в течение 14 дней и обмена в течение 30 дней с момента покупки. Для возврата или обмена товара необходимо сохранить оригинальную упаковку и убедиться, что товар не имеет признаков использования.</p>
-                <p>Если у вас возникли вопросы по доставке, оплате или другим вопросам, не стесняйтесь обращаться к нам</p>
+        <div class="flex items-center max-lg:flex-col gap-6 p-4 border border-[#213357] border-dashed rounded-xl">
+            <img src="../Assets/Images/auth/main.jpg" alt="" class="rounded-xl object-cover w-1/2">
+            <div class="flex flex-col gap-4 items-center w-full lg:w-1/2 text-center">
+                <p class="text-3xl font-Comfortaa">Создать аккаунт</p>
+                <form class="flex flex-col gap-4 items-center w-full">
+                    <div class="flex items-center max-md:flex-col gap-4 w-full">
+                        <input type="text" class="w-full rounded-xl border border-[#213357]/50 focus:outline-none px-4 py-2" placeholder="Фамилия">
+                        <input type="text" class="w-full rounded-xl border border-[#213357]/50 focus:outline-none px-4 py-2" placeholder="Имя">
+                        <input type="text" class="w-full rounded-xl border border-[#213357]/50 focus:outline-none px-4 py-2" placeholder="Отчество">
+                    </div>
+                    <div class="flex items-center max-md:flex-col gap-4 w-full">
+                        <input type="email" class="w-full rounded-xl border border-[#213357]/50 focus:outline-none px-4 py-2" placeholder="Email">
+                        <input type="password" class="w-full rounded-xl border border-[#213357]/50 focus:outline-none px-4 py-2" placeholder="••••••">
+                    </div>
+                    <div class="flex items-center max-md:flex-col gap-4 w-full">
+                        <input type="text" class="w-full rounded-xl border border-[#213357]/50 focus:outline-none px-4 py-2" placeholder="Телефон">
+                        <input type="date" class="w-full rounded-xl border border-[#213357]/50 focus:outline-none px-4 py-2">                        
+                    </div>
+                    <button class="w-[260px] px-4 py-2 rounded-xl border border-[#213357] bg-[#213357] text-white hover:bg-transparent hover:text-[#213357] transition-all duration-500 text-center">Зарегистрироваться</button>
+                </form>
+                <div class="flex items-center justify-center gap-4">
+                    <div class="w-1/3 h-px bg-[#213357]/50"></div>
+                    <p class="font-Comfortaa">или</p>
+                    <div class="w-1/3 h-px bg-[#213357]/50"></div>
+                </div>
+                <a href="auth.html" class="w-[260px] px-4 py-2 rounded-xl border border-[#213357] border-dashed text-[#213357] text-center">Войти</a>
             </div>
         </div>
     </main>
