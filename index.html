@@ -15,8 +15,9 @@
             </a>
             <div class="flex items-center gap-6">
                 <a class="flex flex-col after:transition-all after:duration-500 after:w-0 after:h-px after:bg-[#131313] hover:after:w-full" href="mailto:info@frumkin.su">info@frumkin.su</a>
-                <a class="w-8 h-8" href="Pages/cart.html">
+                <a class="w-8 h-8 relative" href="Pages/cart.html">
                     <img src="Assets/Images/header/cart.svg" alt="">
+                    <span class="absolute -right-1 -bottom-1 rounded-full flex items-center justify-center w-[18px] h-[18px] text-white bg-[#213357] text-sm">0</span>
                 </a>
                 <a class="w-8 h-8" href="Pages/profile.html">
                     <img src="Assets/Images/header/profile.svg" alt="">
@@ -54,11 +55,136 @@
     </section>
 
     <main class="container mx-auto px-4 max-w-[1280px] flex flex-col gap-14 my-10">
-        
+        <div class="flex flex-col gap-6">
+            <p class="text-3xl font-Comfortaa">Преимущества</p>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="flex flex-col gap-4 p-4 rounded-xl border border-[#213357]/10 shadow-[0px_0px_13px_-7px_#213357] relative">
+                    <p class="text-2xl font-Comfortaa">Широкий ассортимент товаров</p>
+                    <p class="text-gray-500">Мы предлагаем разнообразие стилей, размеров и цветов одежды, чтобы удовлетворить потребности самых взыскательных клиентов.</p>
+                    <img src="Assets/Images/advantages/main.svg" alt="" class="w-8 h-8 absolute top-4 right-4">    
+                </div>
+                <div class="flex flex-col gap-4 p-4 rounded-xl border border-[#213357]/10 shadow-[0px_0px_13px_-7px_#213357] relative">
+                    <p class="text-2xl font-Comfortaa">Качество товаров</p>
+                    <p class="text-gray-500">Вся наша продукция проходит строгий контроль качества, что гарантирует долговечность и стильность каждого изделия.</p>
+                    <img src="Assets/Images/advantages/main.svg" alt="" class="w-8 h-8 absolute top-4 right-4">    
+                </div>
+                <div class="flex flex-col gap-4 p-4 rounded-xl border border-[#213357]/10 shadow-[0px_0px_13px_-7px_#213357] relative">
+                    <p class="text-2xl font-Comfortaa">Конкурентоспособные цены</p>
+                    <p class="text-gray-500">Мы предлагаем оптовые цены, которые позволяют нашим клиентам получать высококачественные товары по выгодным условиям.</p>
+                    <img src="Assets/Images/advantages/main.svg" alt="" class="w-8 h-8 absolute top-4 right-4">    
+                </div>
+                <div class="flex flex-col gap-4 p-4 rounded-xl border border-[#213357]/10 shadow-[0px_0px_13px_-7px_#213357] relative">
+                    <p class="text-2xl font-Comfortaa">Гибкие условия сотрудничества</p>
+                    <p class="text-gray-500">Наша команда готова обсудить индивидуальные условия сотрудничества, включая скидки на объемы, условия оплаты и доставки.</p>
+                    <img src="Assets/Images/advantages/main.svg" alt="" class="w-8 h-8 absolute top-4 right-4">    
+                </div>
+                <div class="flex flex-col gap-4 p-4 rounded-xl border border-[#213357]/10 shadow-[0px_0px_13px_-7px_#213357] relative">
+                    <p class="text-2xl font-Comfortaa">Профессиональная поддержка клиентов</p>
+                    <p class="text-gray-500">Мы предоставляем высококвалифицированную поддержку клиентам на всех этапах сотрудничества, от консультации перед покупкой до послепродажного обслуживания.
+                    </p>
+                    <img src="Assets/Images/advantages/main.svg" alt="" class="w-8 h-8 absolute top-4 right-4">    
+                </div>
+                <div class="flex flex-col gap-4 p-4 rounded-xl border border-[#213357]/10 shadow-[0px_0px_13px_-7px_#213357] relative">
+                    <p class="text-2xl font-Comfortaa">Быстрая и надежная доставка</p>
+                    <p class="text-gray-500">Мы работаем с надежными партнерами по логистике, что позволяет нам обеспечивать быструю и безопасную доставку заказов в любую точку мира.</p>
+                    <img src="Assets/Images/advantages/main.svg" alt="" class="w-8 h-8 absolute top-4 right-4">    
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <p class="text-3xl font-Comfortaa">Наши новинки</p>
+            <div class="grid grid-cols-4 gap-6">
+                <div class="flex flex-col gap-6 rounded-xl p-4 border-[0.5px] border-[#213357]/10 group transition-all duration-500 hover:shadow-[0px_0px_13px_-7px_#213357] hover:border-[#213357]">
+                    <img src="Assets/Images/products/test.jpg" alt="" class="rounded-xl transition-all duration-500 aspect-video object-cover group-hover:scale-105">
+                    <p>Тестовый товари и его небольшое описание</p>
+                    <p class="font-Comfortaa text-2xl text-[#213357]">1 508 ₽</p>
+                    <a href="Pages/product.html" class="px-4 py-2 border-[0.5px] border-[#213357]/10 transition-all duration-500 group-hover:border-[#213357] rounded-xl w-fit mx-auto">Подробнее ...</a>
+                </div>
+                <div class="flex flex-col gap-6 rounded-xl p-4 border-[0.5px] border-[#213357]/10 group transition-all duration-500 hover:shadow-[0px_0px_13px_-7px_#213357] hover:border-[#213357]">
+                    <img src="Assets/Images/products/test.jpg" alt="" class="rounded-xl transition-all duration-500 aspect-video object-cover group-hover:scale-105">
+                    <p>Тестовый товари и его небольшое описание</p>
+                    <p class="font-Comfortaa text-2xl text-[#213357]">1 508 ₽</p>
+                    <a href="Pages/product.html" class="px-4 py-2 border-[0.5px] border-[#213357]/10 transition-all duration-500 group-hover:border-[#213357] rounded-xl w-fit mx-auto">Подробнее ...</a>
+                </div>
+                <div class="flex flex-col gap-6 rounded-xl p-4 border-[0.5px] border-[#213357]/10 group transition-all duration-500 hover:shadow-[0px_0px_13px_-7px_#213357] hover:border-[#213357]">
+                    <img src="Assets/Images/products/test.jpg" alt="" class="rounded-xl transition-all duration-500 aspect-video object-cover group-hover:scale-105">
+                    <p>Тестовый товари и его небольшое описание</p>
+                    <p class="font-Comfortaa text-2xl text-[#213357]">1 508 ₽</p>
+                    <a href="Pages/product.html" class="px-4 py-2 border-[0.5px] border-[#213357]/10 transition-all duration-500 group-hover:border-[#213357] rounded-xl w-fit mx-auto">Подробнее ...</a>
+                </div>
+                <div class="flex flex-col gap-6 rounded-xl p-4 border-[0.5px] border-[#213357]/10 group transition-all duration-500 hover:shadow-[0px_0px_13px_-7px_#213357] hover:border-[#213357]">
+                    <img src="Assets/Images/products/test.jpg" alt="" class="rounded-xl transition-all duration-500 aspect-video object-cover group-hover:scale-105">
+                    <p>Тестовый товари и его небольшое описание</p>
+                    <p class="font-Comfortaa text-2xl text-[#213357]">1 508 ₽</p>
+                    <a href="Pages/product.html" class="px-4 py-2 border-[0.5px] border-[#213357]/10 transition-all duration-500 group-hover:border-[#213357] rounded-xl w-fit mx-auto">Подробнее ...</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <p class="text-3xl font-Comfortaa">FAQ</p>
+            <div class="flex flex-col w-full gap-4 FAQ">
+                <button class="flex text-left items-center gap-4 justify-between w-full rounded-xl question p-4 text-white bg-[#213357]">
+                    <span>Какие скидки предоставляются при оптовых закупках?</span>
+                    <img src="Assets/Images/hero/arrow.svg" alt="" class="w-8 h-8 transition-all duration-500">
+                </button>
+                <p class="tracking-wider p-4 hidden answer">
+                    Мы предоставляем скидки на объемы заказов в зависимости от их размера. Например, скидка 10% при заказе от 500 единиц товара.
+                </p>
+            </div>
+            <div class="flex flex-col w-full gap-4 FAQ">
+                <button class="flex text-left items-center gap-4 justify-between w-full rounded-xl question p-4 text-white bg-[#213357]">
+                    <span>Какие способы оплаты вы принимаете?</span>
+                    <img src="Assets/Images/hero/arrow.svg" alt="" class="w-8 h-8 transition-all duration-500">
+                </button>
+                <p class="tracking-wider p-4 hidden answer">
+                    Мы принимаем различные способы оплаты, включая банковский перевод, оплату через платежные системы, электронные кошельки и т.д.
+                </p>
+            </div>
+            <div class="flex flex-col w-full gap-4 FAQ">
+                <button class="flex text-left items-center gap-4 justify-between w-full rounded-xl question p-4 text-white bg-[#213357]">
+                    <span>Каковы условия доставки оптовых заказов?</span>
+                    <img src="Assets/Images/hero/arrow.svg" alt="" class="w-8 h-8 transition-all duration-500">
+                </button>
+                <p class="tracking-wider p-4 hidden answer">
+                    Мы сотрудничаем с надежными транспортными компаниями, чтобы обеспечить быструю и надежную доставку оптовых заказов в любую точку мира. Сроки и стоимость доставки зависят от вашего местоположения и выбранного способа доставки.
+                </p>
+            </div>
+            <div class="flex flex-col w-full gap-4 FAQ">
+                <button class="flex text-left items-center gap-4 justify-between w-full rounded-xl question p-4 text-white bg-[#213357]">
+                    <span>Есть ли возможность вернуть или обменять товары?</span>
+                    <img src="Assets/Images/hero/arrow.svg" alt="" class="w-8 h-8 transition-all duration-500">
+                </button>
+                <p class="tracking-wider p-4 hidden answer">
+                    Мы гарантируем качество каждого товара, который мы продаем. В случае выявления дефектов или несоответствия заказанным характеристикам, вы можете вернуть или обменять товар в соответствии с нашей политикой возврата и обмена.
+                </p>
+            </div>
+            <div class="flex flex-col w-full gap-4 FAQ">
+                <button class="flex text-left items-center gap-4 justify-between w-full rounded-xl question p-4 text-white bg-[#213357]">
+                    <span>Могу ли я получить индивидуальное предложение для моего бизнеса?</span>
+                    <img src="Assets/Images/hero/arrow.svg" alt="" class="w-8 h-8 transition-all duration-500">
+                </button>
+                <p class="tracking-wider p-4 hidden answer">
+                    Да, мы открыты для обсуждения индивидуальных условий сотрудничества для крупных покупателей или постоянных клиентов. Пожалуйста, свяжитесь с нами для получения дополнительной информации и обсуждения ваших потребностей.
+                </p>
+            </div>
+        </div>
     </main>
     
+    <footer class="w-full bg-[#E9E8E8] py-4 flex flex-col gap-4">
+        <div class="flex items-center justify-between container mx-auto px-4 max-w-[1280px]">
+            <a href="index.html" class="w-40">
+                <img src="Assets/Images/header/logo.png" alt="">
+            </a>
+            <div class="flex items-center gap-6 font-Comfortaa">
+                <a href="mailto:info@frumkin.su" class="flex flex-col after:w-0 after:h-px after:bg-[#131313] after:transition-all after:duration-500 hover:after:w-full">info@frumkin.su</a>
+                <a href="tel:+7 (910) 034-15-05" class="flex flex-col after:w-0 after:h-px after:bg-[#131313] after:transition-all after:duration-500 hover:after:w-full">+7 (910) 034-15-05</a>
+                <p>ул.Щукина, 52, Брянск, <br> Брянская обл., 241019</p>
+            </div>
+        </div>
+        <p class="text-center w-full border-t border-[#213357]/50 pt-2">© 2024, Оптовые продажи</p>
+    </footer>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="Assets/JS/main.js"></script>
 </body>
 </html>
