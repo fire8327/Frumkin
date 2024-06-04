@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Страница товара</title>
+    <title>Каталог</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../Assets/CSS/main.css">
 </head>
@@ -44,58 +44,38 @@
     </header>
 
     <main class="container mx-auto px-4 max-w-[1280px] flex flex-col gap-14 my-10">
-        <div class="flex gap-6 p-4 rounded-xl border border-[#213357]/30">
-            <img src="../Assets/Images/products/test.jpg" alt="" class="w-1/2 rounded-xl aspect-video object-cover">
-            <div class="flex flex-col gap-6 w-1/2">
-                <p class="text-3xl font-Comfortaa">Тестовый товар и его описание</p>
-                <div class="flex items-center justify-between">
-                    <p>ID: 12313131</p>
-                    <p>Есть в наличии</p>
-                </div>
-                <div class="w-full h-px bg-[#213357]/50"></div>
+        <div class="flex max-lg:flex-col gap-6">
+            <div class="flex flex-col gap-6 p-4 rounded-xl bg-white shadow-[0px_0px_13px_-3px_#213357] w-1/3 h-fit">
                 <div class="flex flex-col gap-2">
-                    <p>Выберите размер:</p>
+                    <p>Тип продукта</p>
+                    <select class="w-full rounded-xl border border-[#213357]/50 focus:outline-none px-4 py-1">
+                        <option value="Продукт 1">Продукт 1</option>
+                        <option value="Продукт 2">Продукт 2</option>
+                        <option value="Продукт 3">Продукт 3</option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p>Цена</p>
                     <div class="flex items-center gap-2">
-                        <label class="px-4 py-2 rounded-xl border border-[#213357]/50 w-fit has-[:checked]:border-[#213357] cursor-pointer">
-                            50
-                            <input type="radio" name="size" class="hidden">
-                        </label>
-                        <label class="px-4 py-2 rounded-xl border border-[#213357]/50 w-fit has-[:checked]:border-[#213357] cursor-pointer">
-                            51
-                            <input type="radio" name="size" class="hidden">
-                        </label>
-                        <label class="px-4 py-2 rounded-xl border border-[#213357]/50 w-fit has-[:checked]:border-[#213357] cursor-pointer">
-                            52
-                            <input type="radio" name="size" class="hidden">
-                        </label>
-                        <label class="px-4 py-2 rounded-xl border border-[#213357]/50 w-fit has-[:checked]:border-[#213357] cursor-pointer">
-                            53
-                            <input type="radio" name="size" class="hidden">
-                        </label>
+                        <input type="text" class="px-4 py-1 border border-[#213357]/50 w-1/2 rounded-l-xl" placeholder="От">
+                        <input type="text" class="px-4 py-1 border border-[#213357]/50 w-1/2 rounded-r-xl" placeholder="До">
                     </div>
                 </div>
-                <div class="flex flex-col gap-2">
-                    <p>Количество:</p>
-                    <div class="flex items-center gap-2">
-                        <button class="flex items-center justify-center w-10 h-10 border border-[#213357]/50 rounded-xl">-</button>
-                        <p>1</p>
-                        <button class="flex items-center justify-center w-10 h-10 border border-[#213357]/50 rounded-xl">+</button>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <p>Цена:</p>
-                    <p class="text-2xl font-Comfortaa">123 123 ₽</p>
-                </div>
-                <button class="px-4 py-2 rounded-xl w-fit border border-red-500 bg-red-500 text-white transition-all duration-500 hover:bg-transparent hover:text-red-500">В корзину</button>
+                <button class="w-full px-4 py-2 rounded-xl bg-[#213357] text-white transition-all duration-500 border border-[#213357] hover:text-[#213357] hover:bg-transparent text-center">Применить</button>
             </div>
-        </div>
-        <div class="flex flex-col gap-6">
-            <p class="text-3xl font-Comfortaa">О товаре</p>
-            <p class="p-4 rounded-xl border border-[#213357]/50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium omnis iure provident! Dolorum quae iusto consequuntur cumque, accusantium quo nam. Vitae ipsa, fugit ab odit a repellat ex praesentium.</p>
-        </div>
-        <div class="flex flex-col gap-6">
-            <p class="text-3xl font-Comfortaa">Похожие товары</p>
-            <div class="grid grid-cols-4 gap-6">
+            <div class="grid grid-cols-3 gap-6 w-2/3 h-fit">
+                <div class="flex flex-col gap-6 rounded-xl p-4 border-[0.5px] border-[#213357]/40 group transition-all duration-500 hover:shadow-[0px_0px_13px_-7px_#213357] hover:border-[#213357]">
+                    <img src="../Assets/Images/products/test.jpg" alt="" class="rounded-xl transition-all duration-500 aspect-video object-cover group-hover:scale-105">
+                    <p>Тестовый товар и его небольшое описание</p>
+                    <p class="font-Comfortaa text-2xl text-[#213357]">1 508 ₽</p>
+                    <a href="product.html" class="px-4 py-2 border-[0.5px] border-[#213357]/40 transition-all duration-500 group-hover:border-[#213357] rounded-xl w-fit mx-auto">Подробнее ...</a>
+                </div>
+                <div class="flex flex-col gap-6 rounded-xl p-4 border-[0.5px] border-[#213357]/40 group transition-all duration-500 hover:shadow-[0px_0px_13px_-7px_#213357] hover:border-[#213357]">
+                    <img src="../Assets/Images/products/test.jpg" alt="" class="rounded-xl transition-all duration-500 aspect-video object-cover group-hover:scale-105">
+                    <p>Тестовый товар и его небольшое описание</p>
+                    <p class="font-Comfortaa text-2xl text-[#213357]">1 508 ₽</p>
+                    <a href="product.html" class="px-4 py-2 border-[0.5px] border-[#213357]/40 transition-all duration-500 group-hover:border-[#213357] rounded-xl w-fit mx-auto">Подробнее ...</a>
+                </div>
                 <div class="flex flex-col gap-6 rounded-xl p-4 border-[0.5px] border-[#213357]/40 group transition-all duration-500 hover:shadow-[0px_0px_13px_-7px_#213357] hover:border-[#213357]">
                     <img src="../Assets/Images/products/test.jpg" alt="" class="rounded-xl transition-all duration-500 aspect-video object-cover group-hover:scale-105">
                     <p>Тестовый товар и его небольшое описание</p>
